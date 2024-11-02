@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite  name="Functional" parallel="classes" thread-count="2">
+
+<listeners>
+<listener class-name="com.qa.extentreportListener.ExtentReporterNG"/>
+</listeners>
+         
+  <test name="UltimatixLogin">
+	 <classes>
+	 <class name="com.qa.tests.LoginPageTest"/>
+	 </classes>
+	   </test>
+	   <test name="UltimatixHome">
+	   <classes>
+	 	  <class name="com.qa.tests.HomePageTest"/>
+	 </classes>
+</test>
+   </suite>
+   
+   
+ <!--   <suite  name="Functional">
+         
+  <test name="Ultimatix">
+	 <classes>
+	 <class name="com.qa.tests.LoginPageTest"/>
+	 <class name="com.qa.tests.HomePageTest"/>
+	 </classes>
+</test>
+   </suite> -->

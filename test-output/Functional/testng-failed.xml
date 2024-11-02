@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Functional]" parallel="classes">
+  <test thread-count="2" name="UltimatixLogin(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLogin"/>
+          <include name="openLoginPageTest"/>
+        </methods>
+      </class> <!-- com.qa.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- UltimatixLogin(failed) -->
+  <test thread-count="2" name="UltimatixHome(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.tests.HomePageTest">
+        <methods>
+          <include name="verifyLogoutButton"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="verifyBrokenLinks"/>
+          <include name="openHomePageTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.tests.HomePageTest -->
+    </classes>
+  </test> <!-- UltimatixHome(failed) -->
+</suite> <!-- Failed suite [Functional] -->
